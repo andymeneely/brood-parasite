@@ -1,0 +1,20 @@
+id,cpu,qty,name,type,scan,broadcast,crack,script,child
+1,1,8,Wasted Cycles,Waste Asset,Trash this card,Trash this card,Trash this card,Trash this card,
+2,,4,Phishing Expedition,Asset,Reveal a Server card,Gain $1,"After 1 :time:, gain 1 rep.",Deploy this to a Job. Gain $1 at the start of each turn.,
+3,,,Physical Access Logs,Asset,,,,,
+4,,,Email Dump,Asset,,,,,
+5,,,Spear Phishing,Asset,,,,,
+6,,,Injection Exploit,Exploit Asset,View a Server card,,,,Software Defense
+7,1,2,Rainbow Table,Exploit Asset,,,-2 :time:,,Encrypted Asset
+8,,,Compression Bomb Exploit,Exploit Asset,,Reveal each top Server card. If they are Software,,,Defense
+9,3,4,Credential Dump,Encrypted Asset,Gain $1,All players gain 1 rep. You also gain $1,"After 3 :time:, access a server and gain a card",,
+10,,,Server Logs,Encrypted Asset,,Gain 2 rep. Trash this card.,"Gain Secret from server, trash this card.",,
+11,,,Database Backups,Encrypted Asset,,,,,
+12,3,3,Bot Net,,,,,,
+13,,,Multi-factor Authentication,App Defense,,,,,
+14,,,Input Validator,App Defense,,,,,
+15,4,3,Command and Control,Software Asset,,,,Deploy to a Job. Any Action card may be stored here between turns. Cancel anytime.,
+16,,,Firewall,Network Defense Software,Gain 1 CPU buff,,Gain an Exploit,,
+17,,,Intrusion Detection System,Network Defense Software,Gain 1 CPU buff,,Gain an Exploit,,
+18,,,Stack Smashing Exploit,Exploit Asset,,,+1 rep,,App Defense
+,,,,,,,,,
