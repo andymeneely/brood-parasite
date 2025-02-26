@@ -1,25 +1,22 @@
 name:
   x: 90
   y: 90
-  width: 500
+  width: deck - 90
   height: 50
-  font: Arial 18
+  font: Open Sans Bold 25
   valign: middle
   align: left
   ellipsize: false
 
-ATK:
+desc:
   x: 90
-  y: 190
-  width: 200
-  height: 50
-  font: Arial 12
+  y: 225
+  width: deck - 90
+  height: 100
+  font: Open Sans 12
   valign: middle
-  align: left
+  align: center
   ellipsize: false
-DEF:
-  extends: ATK
-  y: += 75
 
 version:
   font: Arial 6

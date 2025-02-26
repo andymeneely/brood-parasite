@@ -1,0 +1,26 @@
+name:
+  x: 90
+  y: 90
+  width: deck - 90
+  height: 50
+  font: Open Sans Bold 25
+  valign: middle
+  align: left
+  ellipsize: autoscale
+  hint: red
+
+
+desc:
+  x: 90
+  y: 225
+  width: deck - 90
+  height: 100
+  font: Open Sans 12
+  valign: middle
+  align: center
+  ellipsize: false
+
+version:
+  font: Arial 6
+  x: 725
+  y: 45
