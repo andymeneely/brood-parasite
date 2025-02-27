@@ -1,17 +1,17 @@
 name:
   x: 90
   y: 90
-  width: deck - 90
+  width: deck - 180
   height: 50
   font: Open Sans Bold 25
   valign: middle
-  align: left
+  align: right
   ellipsize: false
 
 desc:
   x: 90
   y: 225
-  width: deck - 90
+  width: deck - 180
   height: 100
   font: Open Sans 12
   valign: middle
@@ -22,3 +22,31 @@ version:
   font: Arial 6
   x: 725
   y: 45
+
+action_icon:
+  file: icons.svg
+  x: 135
+  y: 350
+  crop_height: 128
+  crop_width: 128
+
+action_scan:
+  extends: action_icon
+
+action_broadcast:
+  extends: action_icon
+  crop_y: 128
+  y: 500
+
+action_crack:
+  extends: action_icon
+  crop_y: 256
+  y: 650
+
+action_script:
+  extends: action_icon
+  crop_y: 384
+  y: 800
+
+child:
+  file: child.svg
