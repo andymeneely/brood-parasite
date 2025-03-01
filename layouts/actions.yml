@@ -1,30 +1,58 @@
 name:
-  x: 90
+  x: 175
   y: 90
+  width: deck - 300
+  height: 100
+  font: Open Sans Bold 22
+  valign: middle
+  align: center
+  ellipsize: autoscale
+  # hint: red
+
+type:
+  x: 90
+  y: 175
   width: deck - 180
   height: 50
-  font: Open Sans Bold 25
-  valign: middle
-  align: right
-  ellipsize: false
-
-desc:
-  x: 90
-  y: 225
-  width: deck - 180
-  height: 100
   font: Open Sans 12
   valign: middle
   align: center
   ellipsize: false
+  # hint: red
+
+desc:
+  x: 275
+  y: 325
+  width: 450
+  height: 600
+  font: Times New Roman,serif 10
+
+  valign: middle
+  align: center
+  ellipsize: false
+
 
 version:
   font: Arial 6
   x: 725
   y: 45
 
+cpu:
+  x: 90
+  y: 90
+  font: Open Sans Bold 16
+
+time_str:
+  extends: cpu
+  y: 175
+
+time_str_embed:
+  file: img/time.svg
+  width: 54
+  height: 54
+  dy: -42
+
 action_icon:
-  file: icons.svg
   x: 135
   y: 350
   crop_height: 128
@@ -50,3 +78,36 @@ action_script:
 
 child:
   file: child.svg
+
+child_text:
+  x: 275
+  y: 325
+  width: 425
+  align: center
+  font: Open Sans Italic 10
+  # hint: red
+
+embed_icon:
+  width: 48
+  height: 48
+  dy: -32
+
+scan_embed_icon:
+  extends: embed_icon
+  file: img/scan_embed.svg
+
+broadcast_embed_icon:
+  extends: embed_icon
+  file: img/broadcast_embed.svg
+
+crack_embed_icon:
+  extends: embed_icon
+  file: img/crack_embed.svg
+
+script_embed_icon:
+  extends: embed_icon
+  file: img/script_embed.svg
+
+time_embed_icon:
+  extends: embed_icon
+  file: img/time.svg
