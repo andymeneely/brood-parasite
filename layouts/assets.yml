@@ -1,26 +1,162 @@
 name:
-  x: 90
+  x: 175
   y: 90
-  width: deck - 90
-  height: 50
-  font: Open Sans Bold 25
-  valign: middle
-  align: left
-  ellipsize: autoscale
-  hint: red
-
-
-desc:
-  x: 90
-  y: 225
-  width: deck - 90
+  width: deck - 300
   height: 100
+  font: Open Sans Bold 22
+  valign: middle
+  align: center
+  ellipsize: autoscale
+  # hint: red
+
+type:
+  x: 90
+  y: 175
+  width: deck - 180
+  height: 50
   font: Open Sans 12
   valign: middle
   align: center
   ellipsize: false
+  # hint: red
+
+desc:
+  x: 275
+  y: 325
+  width: 450
+  height: 600
+  font: Times New Roman,serif 10
+
+  valign: middle
+  align: center
+  ellipsize: false
+
 
 version:
   font: Arial 6
   x: 725
   y: 45
+
+cpu:
+  x: 90
+  y: 90
+  font: Open Sans Bold 16
+
+time_str:
+  extends: cpu
+  y: 175
+
+time_str_embed:
+  file: img/time.svg
+  width: 54
+  height: 54
+  dy: -42
+
+vuln_icon:
+  x: 75
+  crop_x: 128
+  crop_height: 128
+  crop_width: 128
+
+vuln_scan:
+  extends: vuln_icon
+  y: 225
+
+vuln_broadcast:
+  extends: vuln_icon
+  crop_y: 128
+  y: 375
+
+vuln_crack:
+  extends: vuln_icon
+  crop_y: 256
+  y: 525
+
+vuln_script:
+  extends: vuln_icon
+  crop_y: 384
+  y: 700
+
+child:
+  file: child.svg
+
+child_text:
+  x: 275
+  y: 325
+  width: 425
+  align: center
+  font: Open Sans Italic 10
+  # hint: red
+
+embed_icon:
+  width: 48
+  height: 48
+  dy: -32
+
+scan_embed_icon:
+  extends: embed_icon
+  file: img/scan_embed.svg
+
+broadcast_embed_icon:
+  extends: embed_icon
+  file: img/broadcast_embed.svg
+
+crack_embed_icon:
+  extends: embed_icon
+  file: img/crack_embed.svg
+
+script_embed_icon:
+  extends: embed_icon
+  file: img/script_embed.svg
+
+time_embed_icon:
+  extends: embed_icon
+  file: img/time.svg
+
+vuln_text:
+  x: 215
+  # hint: red
+  width: 500
+  height: 128
+  valign: middle
+  font: Times New Roman,serif 10
+
+scan_text:
+  extends:
+    - vuln_scan
+    - vuln_text
+
+broadcast_text:
+  extends:
+    - vuln_broadcast
+    - vuln_text
+
+crack_text:
+  extends:
+    - vuln_crack
+    - vuln_text
+
+script_text:
+  extends:
+    - vuln_script
+    - vuln_text
+
+scan_box:
+  width: deck - 90
+  height: 128
+  x: 0
+  y: 225
+  fill_color: '#8fc7caff'
+  stroke_color: none
+
+broadcast_box:
+  extends: scan_box
+  y: 375
+
+crack_box:
+  extends: scan_box
+  y: 525
+
+script_box:
+  extends: scan_box
+  y: 700

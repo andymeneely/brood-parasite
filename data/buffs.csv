@@ -1,4 +1,4 @@
-count,name,type,desc
-8,Bottleneck,Debuff,-1 Jobs
-8,CPU Spike,Debuff,-1 CPU Cycles
+qty,name,type,desc
+4,Bottleneck,Debuff,-1 Jobs
+4,CPU Spike,Debuff,-1 CPU Cycles
 4,Concurrency,Buff,"Play at any time. +3 CPU cycles. Discard after use."

@@ -12,6 +12,7 @@ Squib::Deck.new(cards: data.nrows) do
 
   text str: data.name, layout: :name
   text str: data.type, layout: :type
+  text str: data.cpu, layout: :cpu
 
   text(layout: :time_str,
        str: data.time.map { |t| t > 0 ? "#{t} :time:" : ''}) do |embed|
@@ -26,7 +27,7 @@ Squib::Deck.new(cards: data.nrows) do
     embed.svg key: ':time:', layout: :time_embed_icon
   end
 
-  text str: data.cpu, layout: :cpu
+
 
   child_svg = data.child.map {|c| c.to_s.empty? ? nil : 'child.svg' }
   svg layout: :child, file: child_svg
