@@ -60,30 +60,28 @@ vuln_icon:
 
 vuln_scan:
   extends: vuln_icon
-  y: 225
+  y: 300
 
 vuln_broadcast:
   extends: vuln_icon
-  crop_y: 128
-  y: 375
 
 vuln_crack:
   extends: vuln_icon
-  crop_y: 256
-  y: 525
+  crop_y: 128
+  y: 550
 
 vuln_script:
   extends: vuln_icon
-  crop_y: 384
-  y: 700
+  crop_y: 256
+  y: 800
 
 child:
   file: child.svg
 
 child_text:
-  x: 275
-  y: 325
-  width: 425
+  x: 90
+  y: 875
+  width: deck - 180
   align: center
   font: Open Sans Italic 10
   # hint: red
@@ -114,49 +112,41 @@ time_embed_icon:
   file: img/time.svg
 
 vuln_text:
-  x: 215
-  # hint: red
-  width: 500
-  height: 128
-  valign: middle
-  font: Times New Roman,serif 10
+  x: 200
+  width: deck - 400
+  height: 200
+  font: Times New Roman,serif 9
 
 scan_text:
   extends:
-    - vuln_scan
     - vuln_text
-
-broadcast_text:
-  extends:
-    - vuln_broadcast
-    - vuln_text
+  y: 330
 
 crack_text:
   extends:
-    - vuln_crack
     - vuln_text
+    - scan_text
+  y: += 250
 
 script_text:
   extends:
-    - vuln_script
     - vuln_text
+    - crack_text
+  y: += 250
 
 scan_box:
-  width: deck - 90
-  height: 128
-  x: 0
-  y: 225
-  fill_color: '#8fc7caff'
-  stroke_color: none
-
-broadcast_box:
-  extends: scan_box
-  y: 375
+  width: deck - 270
+  height: 200
+  x: 135
+  y: 325
+  fill_color: white
+  stroke_color: black
+  radius: 16
 
 crack_box:
   extends: scan_box
-  y: 525
+  y: += 250
 
 script_box:
-  extends: scan_box
-  y: 700
+  extends: crack_box
+  y: += 250

@@ -26,17 +26,14 @@ Squib::Deck.new(cards: data.nrows) do
   text layout: :child_text, str: data.child
 
   rect layout: :scan_box, range: range_any(data.scan)
-  rect layout: :broadcast_box, range: range_any(data.broadcast)
   rect layout: :crack_box, range: range_any(data.crack)
   rect layout: :script_box, range: range_any(data.script)
 
   svg layout: :vuln_scan, file: 'icons.svg', range: range_any(data.scan)
-  svg layout: :vuln_broadcast, file: 'icons.svg', range: range_any(data.broadcast)
   svg layout: :vuln_crack, file: 'icons.svg', range: range_any(data.crack)
   svg layout: :vuln_script, file: 'icons.svg', range: range_any(data.script)
 
   text str: data.scan, layout: :scan_text
-  text str: data.broadcast, layout: :broadcast_text
   text str: data.crack, layout: :crack_text
   text str: data.script, layout: :script_text
 
@@ -50,7 +47,7 @@ Squib::Deck.new(cards: data.nrows) do
   #     file: data.script.map { |s| s == 'Y' ? 'icons.svg' : nil }
 
 
-  safe_zone
+  # safe_zone
   cut_zone
 
   save_png prefix: 'asset_'

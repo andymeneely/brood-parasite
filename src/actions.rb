@@ -21,13 +21,10 @@ Squib::Deck.new(cards: data.nrows) do
 
   text str: data.desc, layout: :desc do |embed|
     embed.svg key: ':scan:', layout: :scan_embed_icon
-    embed.svg key: ':broadcast:', layout: :broadcast_embed_icon
     embed.svg key: ':crack:', layout: :crack_embed_icon
     embed.svg key: ':script:', layout: :script_embed_icon
     embed.svg key: ':time:', layout: :time_embed_icon
   end
-
-
 
   child_svg = data.child.map {|c| c.to_s.empty? ? nil : 'child.svg' }
   svg layout: :child, file: child_svg

@@ -1,20 +1,19 @@
-id,cpu,time,qty,name,type,scan,broadcast,crack,script,child,desc
-1,1,0,1,Scan,Action,Y,,,,Asset,
-2,1,0,1,Broadcast,Action,,Y,,,Asset,
-3,2,1,1,Crack,Action,,,Y,,Asset,
-4,2,1,1,Script,Action,,,,Y,Asset,
-6,2,2,1,Dox Rival,Action,,,Y,,,":crack: After :time:, Choose Rival. They gain Bottleneck"
-7,1,1,1,Rival Denial,Rival Action,,,,Y,,":script: After :time:, select Rival. They gain a CPU Spike. This Job only ends when that rival has no CPU spikes."
-8,1,1,1,Denial of Service,Action,Y,,,Y,,"After 1 :time:, announce either :scan: or :broadcast:. Look at a Server card, and if the card has a matching vulnerability, do the action and replace the card on the Server."
-9,1,1,1,Man in the Middle,Attack Action,Y,,,,Network Defense,
-10,1,1,1,Brute Force,Action,Y,Y,,,,"After :time:, announce either :scan: or :broadcast:. Look at a Server card, and if the card has a matching vulnerability, do the action and replace the card on the Server."
-11,1,1,1,Exfiltrate,Action,,,Y,Y,,":crack: or :script: Add a Server card to this Job. After 2 :time:, gain that card. If this job is Cancelled, replace the card to its server"
-12,1,1,1,Root Kit,Action,,,Y,Y,Asset,This does not count against your Job limits.
-13,4,1,1,Lateral Movement,Action,Y,Y,Y,Y,,Place this on top of an existing Job.
-14,1,1,1,Trojan Horse,Action,,,,,Waste Asset,Place this Waste Asset on the discard of Rival
-15,1,2,1,Kill Signal ,Rival Action,,,,Y,,"Target any player. Cancel one of their Jobs. If you target yourself, 1 :time:."
-16,5,1,1,Reboot,Action,,,,,,Remove all Debuffs. You may cancel any of your jobs for $1 each.
-17,3,1,1,Refactor,Action,,,,,,You may re-order your discard pile.
-18,1,1,1,Worm,Action,,,,,,
-19,1,1,1,Virus,Action,,,,,,
-20,1,1,1,Birthday Hack,Action,Y,Y,,,Encrypted Asset,
+id,cpu,time,qty,name,type,scan,crack,script,child,desc
+1,1,0,1,Scan,Action,Y,,,Asset,
+3,2,1,1,Crack,Action,,Y,,Asset,
+4,2,1,1,Script,Action,,,Y,Asset,
+6,2,2,1,Dox Rival,Action,,Y,,,":crack: After :time:, Choose Rival. They gain Bottleneck"
+7,1,1,1,Rival Denial,Rival Action,,,Y,,":script: After :time:, select Rival. They gain a CPU Spike. This Job only ends when that rival has no CPU spikes."
+8,1,1,1,Denial of Service,Action,Y,,Y,,"After 1 :time:, announce either :scan: or :broadcast:. Look at a Server card, and if the card has a matching vulnerability, do the action and replace the card on the Server."
+9,1,1,1,Man in the Middle,Attack Action,Y,,,Network Defense,
+10,1,1,1,Brute Force,Action,Y,,,,"After :time:, announce either :scan: or :broadcast:. Look at a Server card, and if the card has a matching vulnerability, do the action and replace the card on the Server."
+11,1,1,1,Exfiltrate,Action,,Y,Y,,":crack: or :script: Add a Server card to this Job. After 2 :time:, gain that card. If this job is Cancelled, replace the card to its server"
+12,1,1,1,Root Kit,Action,,Y,Y,Asset,This does not count against your Job limits.
+13,4,1,1,Lateral Movement,Action,Y,Y,Y,,Place this on top of an existing Job.
+14,1,1,1,Trojan Horse,Action,,,,Waste Asset,Place this Waste Asset on the discard of Rival
+15,1,2,1,Kill Signal ,Rival Action,,,Y,,"Target any player. Cancel one of their Jobs. If you target yourself, 1 :time:."
+16,5,1,1,Reboot,Action,,,,,Remove all Debuffs. You may cancel any of your jobs for $1 each.
+17,3,1,1,Refactor,Action,,,,,You may re-order your discard pile.
+18,1,1,1,Worm,Action,,,,,
+19,1,1,1,Virus,Action,,,,,
+20,1,1,1,Birthday Hack,Action,Y,,,Encrypted Asset,
