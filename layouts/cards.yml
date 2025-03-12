@@ -1,5 +1,5 @@
 name:
-  x: 175
+  x: 185
   y: 90
   width: deck - 300
   height: 100
@@ -38,9 +38,9 @@ version:
   y: 45
 
 cpu:
-  x: 90
-  y: 90
-  font: Open Sans Bold 16
+  x: 100
+  y: 80
+  font: Open Sans Bold 14
 
 time_str:
   extends: cpu
@@ -150,3 +150,49 @@ crack_box:
 script_box:
   extends: crack_box
   y: += 250
+
+quick:
+  x: 75
+  y: 300
+
+bots:
+  x: 75
+  y: 550
+
+dev:
+  x: 75
+  y: 825
+
+desc_text:
+  font: Times New Roman,serif 9
+  # hint: red
+  valign: middle
+  align: center
+
+quick_text:
+  extends:
+    - quick
+    - desc_text
+  width: 550
+  height: 160
+
+bots_text:
+  extends:
+    - bots
+    - desc_text
+  width: 550
+  height: 175
+
+dev_text:
+  extends:
+    - dev
+    - desc_text
+  x: 100
+  width: 625
+  height: 200
+
+ops_text:
+  font: Consolas 10
+  hint: red
+  x: 800
+  y: 650
