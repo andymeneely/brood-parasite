@@ -180,6 +180,7 @@ bots_text:
   extends:
     - bots
     - desc_text
+  x: 110
   width: 550
   height: 175
 
@@ -194,5 +195,5 @@ dev_text:
 ops_text:
   font: Consolas 10
   hint: red
-  x: 800
-  y: 650
+  x: 0
+  y: 0

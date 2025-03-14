@@ -1,55 +1,56 @@
 id,name,cpu,qty,type,quick_icon,quick_text,bots_icon,ops,bots_text,dev_icon,dev_text
-1,Scan,2,1,Action,quick_action,Apply to an asset,,,,,
-2,Command,2,1,Action,,,bots_action,3,Apply to an asset,dev,Infect once.
+1,Scan,2,1,Action,quick_action,,,,,,
+2,Command,2,1,Action,,,bots_action,3,,dev,Infect once.
 3,Script,3,1,Action,,,,,,dev,
-4,Dox Rival,3,1,Action,,,bots_action,12,"Immediately: place Rival token on this job.
-
-Finish: Rival gains 2 Bottleneck",dev,Gain a Rival card
-5,Rival Denial,1,1,Rival Action,,,bots_action,3,"Rival gains CPU spike. This Job only ends when that rival has no CPU spikes.",dev,
-6,Denial of Service,1,1,Action,quick_action,Apply to an asset,,10,While this job is running,dev,
-7,Man in the Middle,1,1,Rival Action,quick_action,TBD,,,,dev,TBD
+4,Dox Rival,3,1,Action,quick_action,Steal $1 from rival,bots_action,8,"Rival gains 2 Bottleneck",dev,Gain a Rival card
+6,Denial of Service,1,1,Action,quick_action,Systems only,,10,While this job is running,dev,
 8,Brute Force,1,1,Action,quick_action,Apply to an asset,bots_action,8,"Apply to Encrypted Asset",,
 9,Exfiltrate,1,1,Action,,,bots_action,2,Command bots on asset,dev,"TBD"
 10,Root Kit,1,1,Action,,,bots_action,5,Command bots on asset. This does not count against your Job limits.,dev,
 11,Move Laterally,4,1,Action,,,bots_action,1,"START: Place an Action on this card.
 
 FINISH: Place Action on top of your draw pile.",dev,
-12,Trojan Horse,1,1,Rival Action,,,,,,dev,Place a Waste Cycles on the discard of Rival
-13,Kill Signal,1,1,Rival Action,,,,,,dev,"Target any player. Cancel one of their Jobs."
 14,Reboot,5,1,Action,,Remove all Debuffs. You may cancel any of your jobs for $1 each.,,,,,
 15,Refactor,3,1,Action,,You may re-order your discard pile.,,,,dev,You may re-order your draw pile.
-16,Worm,1,1,Exploit Action,,,,,,,
-17,Virus,1,1,Action,,,,,,,
-18,Birthday Hack,1,1,Action,quick_action,Scan an encrypted asset,,,,,
-19,Wasted Cycles,1,1,Waste Asset,,Trash this card,,,,,
-20,Phishing Expedition,1,1,Asset,quick_vuln,Reveal a Server card,bots_vuln,1,"Gain 1 rep",dev,Gain $5 at the start the next turn
-21,Card Swipe Logs,1,1,Asset,quick_vuln,,,,,,
-22,Email Dump,1,1,Asset,quick_vuln,,,,,,
-23,Spear Phishing,1,1,Exploit,,,,,,,
-24,Injection Exploit,1,1,Exploit Asset,quick_vuln,Infect ☣,,,,,
-25,Rainbow Table,1,1,Exploit Asset,,-2 :time:,,,,,
-26,Compression Bomb,1,1,Exploit Asset,,,,,,,
+18,Birthday Attack,1,1,Action,quick_action,Encrypted only,bot_action,2,"Encrypted only",,
+29,Spread Infection,1,1,Action,,Infect ☣,bots_vuln,10,Infect twice. ☣☣,,
+48,Hard Reset,5,2,Action,quick_action,Remove one debuff,bots_action,2,Cancel any of your jobs,dev,TBD
+49,Reset Accounts,5,1,Action,,,,,,dev,"When a rival attacks you, you may discard this card instead."
+30,Multi-factor Auth,3,1,App Defense,,,bots_chain,12,Critical Assets only. Defeat when completed.,,
+31,Input Validator,3,1,App Defense,,,,,,dev,"If you are not overclocked, defeat this defense. Otherwise, this cannot be removed from your dev slot."
+20,Phishing Expedition,1,1,Asset,quick_vuln,Gain $1,bots_vuln,1,"Gain $3",dev,Gain $5 at the start the next turn
+21,Card Swipe Logs,3,1,Asset,quick_vuln,Infect one time,bots_vuln,5,Infect two times,,
+22,Email Dump,1,1,Asset,quick_vuln,Infect one time,bots_vuln,15,"Immediately place 3 counter tokens on this card. During bots phase, if this is completed, Infect one for each counter. If not, remove a counter.",,
+28,Server Logs,1,1,Asset,quick_vuln,Infect one time.,bots_vuln,2,"Gain Secret from server, trash this card.",,
+41,Command & Control,3,1,Asset,,,bots_vuln,20,Infect a node in your network that you are not connected to. Trash this card.,,
+37,Medical Records,1,1,Critical Asset,quick_vuln,Gain $2,bots_vuln,5,,,
+40,Financial Records,1,1,Critical Asset,quick_vuln,Gain $2,bots_vuln,10,"Immediately place $5 on this card. During bots phase, if this is completed, gain the money. If not, remove $1",,
 27,Credential Dump,1,1,Encrypted Asset,,Gain $1,bots_vuln,1,"After 3 :time:, access a server and gain a card",,
-28,Server Logs,1,1,Asset,,,bots_vuln,2,"Gain Secret from server, trash this card.",,
-29,Spread Infection,1,1,Action,,Infect ☣,bots_vuln,10,"Infect twice. ☣☣",,
-30,Multi-factor Auth,1,1,App Defense,,,,,,,
-31,Input Validator,1,1,App Defense,,,,,,dev,"If you are not overclocked, defeat this defense. Otherwise, this cannot be removed from your dev slot."
-32,Buffer,1,1,Software Asset,,,,,,dev,You may place an Action on this card.
-33,Firewall,1,1,Network Defense Asset,,Gain 1 CPU buff,bots_vuln,2,Gain an Exploit,,
-34,Intrusion Detection,1,1,Network Defense Asset,,Gain 1 CPU buff,bots_vuln,3,Gain an Exploit,,
-35,Stack Smashing,1,1,Exploit Asset,,,,,,,
-36,Database Backups,1,1,Encrypted Asset,,,,,,,
-37,Medical Records,1,1,Critical Asset,,,,,,,
-38,Ransomware,1,1,Exploit,,,,,,,
-39,Cache Poisoning,1,1,Exploit,,,,,,,
-40,Financial Records,1,1,Asset,,,,,,,
-41,Command and Control,1,1,Asset,,,,,,,
-42,Shell Script,1,1,Exploit,,,,,,,
-43,Remote Code Execution,1,1,Exploit,,,,,,,
+36,Database Backups,1,1,Encrypted Asset,quick_vuln,Spend $2 to infect once,bots_vuln,2,"You may infect up to three times, for $1 each",,
+16,Worm,2,1,Exploit,,,bots_chain,2,Defense only,dev,"At the start of the bots phase, reduce the job with the highest cost by 3 ops."
+17,Virus,1,1,Exploit,,,bots_vuln,3,"Infect a new node. If the network of that node has uninfected nodes, add 3 ops to this job (keep this job).",,
+23,Spear Phishing,3,1,Exploit,quick_vuln,Gain $3 or Infect two nodes.,bots_vuln,8,Gain $5k or Infect 3 nodes.,,
+24,Injection Exploit,1,1,Exploit,quick_vuln,Infect ☣,,,,,
+25,Rainbow Table,1,1,Exploit,,-2 :time:,,,,,
+26,Compression Bomb,1,1,Exploit,,,,,,,
+35,Stack Smashing,1,1,Exploit,,,,,,,
+38,Ransomware,1,1,Exploit,,,bots_chain,10,"Critical assets only. Place $1 on this card. Upon completion, you may either gain the reward, or increase the reward by $2.",,
+39,Cache Poisoning,1,1,Exploit,quick_action,You may immediately attach a non-critical Asset from your discard to this action.,,,,dev,"Immediately after an opponent infects one of your nodes, you may infect that node a third time. If you do, discard this card."
+42,Shell Script,3,1,Exploit,quick_action,Reduce all jobs by 2 ops,bots_vuln,1,Reduce all jobs by 3,dev,TBD
+43,Remote Code Execution,1,1,Exploit,,,bots_vuln,,TBD. Something that chains things?,,
 44,Process Injection,1,1,Exploit,,,,,,,
-45,Ransomware,1,1,Exploit,,,bots_action,5,Systems only,,
+45,Ransomware,1,1,Exploit,quick_action,Double the money gained upon completion. Critical assets only.,bots_action,5,Systems only,,
+50,Fork Bomb,1,1,Exploit,,,,,,,
+51,Session Hijacking,1,,Exploit,,,,,,,
+52,Regex Bomb,1,,Exploit,quick_action,,,,,,
+33,Firewall,1,1,Network Defense,,,bots_vuln,20,TBD,,
+34,Intrusion Detection,1,1,Network Defense,,,bots_vuln,30,"TBD",,
+5,Rival Denial,1,1,Rival Action,,,bots_action,3,Rival gains CPU spike. This Job only ends when that rival has no CPU spikes.,dev,
+7,Man in the Middle,1,1,Rival Action,quick_action,Rivals only,,,,dev,TBD
+12,Trojan Horse,1,1,Rival Action,,,,,,dev,Place a Waste Cycles on the discard of Rival
+13,Kill Signal,1,1,Rival Action,,,,,,dev,Target any player. Cancel one of their Jobs.
 46,Bot Herder Rival,0,2,Rival Asset,quick_vuln,Applies to a Rival that has the most Bots.,,,,,
 47,Adjacent Rival,0,2,Rival Asset,quick_vuln,Applies to Rival on your right or left,bots_vuln,3,Applies to a Rival you share a node with.,,
-48,Hard Reset,5,2,Action,,,,,,,
-49,Reset Accounts,5,1,Action,,,,,,dev,The next rival action against you fails.
-50,Fork Bomb,1,1,Exploit,,,,,,,
+32,Buffer,1,1,Software Asset,,,,,,dev,You may place an Action on this card.
+19,Wasted Cycles,1,1,Waste Asset,quick_action,Trash this card,,,,,
+53,Daemon,1,1,,,,,,,,
