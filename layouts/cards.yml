@@ -194,6 +194,10 @@ dev_text:
 
 ops_text:
   font: Consolas 10
-  hint: red
-  x: 0
-  y: 0
+  color: white
+  # hint: red
+  x: 638
+  y: 687
+  width: 60
+  height: 40
+

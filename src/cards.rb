@@ -48,7 +48,7 @@ Squib::Deck.new(cards: data.nrows) do
 
   # save_png prefix: 'cards_'
 
-  # save_pdf file: 'pnp_cards.pdf', trim: '0.125in'
+  save_pdf file: 'pnp_cards.pdf', trim: '0.125in'
 
   save_sheet prefix: 'sheet_cards_',
     trim: '0.125in',
