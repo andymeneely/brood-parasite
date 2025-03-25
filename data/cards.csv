@@ -52,9 +52,9 @@ Finish: gain an exploit for $3 less",,
 50,Kill Signal,1,1,Rival Action,quick,Kill the job of a rival with fewer bots than you.,bots_action,5,Kill the job of target rival,dev,You may kill any of your jobs at any time.
 51,Bot Herder Rival,0,2,Rival Asset,,,bots_vuln,3,Applies to a Rival that has the most Bots.,,
 52,Roommate Rival,1,2,Rival Asset,,,bots_vuln,1,Applies to a Rival you share a node with.,,
-53,Fork Bomb,1,1,Rival Exploit,quick,Reduce one of your nodes to a single infection disc,bots_action,3,"Rival must uninstall all discs from one of your nodes.",,
-54,Session Hijacking,1,1,Rival Exploit,quick,Infect a rival node adjacent to your own.,bots_action,1,"Immediately: add up to 3 counters, and 5 Ops per counter.
+53,Adjacent Rival,0,,Rival Asset,,,bots_vuln,4,Applies to a Rival you share a network with.,,
+54,Fork Bomb,1,1,Rival Exploit,quick,Reduce one of your nodes to a single infection disc,bots_action,3,"Rival must uninstall all discs from one of your nodes.",,
+55,Session Hijacking,1,1,Rival Exploit,quick,Infect a rival node adjacent to your own.,bots_action,1,"Immediately: add up to 3 counters, and 5 Ops per counter.
 Finish: for each counter, infect a rival node adjacent to your own.",,
-55,Trojan Horse,1,1,Rival Exploit,,,bots_vuln,1,Add a Waste Cycles to a rival and infect one of their nodes adjacent to yours.,dev,"At the start of your turn, place a Waste Cycles on the discard of Rival"
-56,Wasted Cycles,1,1,Waste,quick,Trash this card,,,,,
-,Adjacent Rival,0,,Rival Asset,,,bots_vuln,4,Applies to a Rival you share a network with.,,
+56,Trojan Horse,1,1,Rival Exploit,,,bots_vuln,1,Add a Waste Cycles to a rival and infect one of their nodes adjacent to yours.,dev,"At the start of your turn, place a Waste Cycles on the discard of Rival"
+57,Wasted Cycles,1,1,Waste,quick,Trash this card,,,,,
