@@ -1,7 +1,7 @@
 name:
-  x: 185
-  y: 90
-  width: deck - 300
+  x: 155
+  y: 70
+  width: 575
   height: 100
   font: Consolas Bold 22
   valign: middle
@@ -39,8 +39,8 @@ version:
 
 cpu:
   x: 100
-  y: 80
-  font: Open Sans Bold 14
+  y: 77
+  font: Open Sans Bold 12
 
 time_str:
   extends: cpu
@@ -157,7 +157,7 @@ quick:
 
 bots:
   x: 75
-  y: 550
+  y: 500
 
 dev:
   x: 75
@@ -181,8 +181,9 @@ bots_text:
     - bots
     - desc_text
   x: 110
-  width: 550
-  height: 175
+  width: 525
+  height: 220
+  # hint: red
 
 dev_text:
   extends:
@@ -196,8 +197,8 @@ ops_text:
   font: Consolas 10
   color: white
   # hint: red
-  x: 638
-  y: 687
+  x: 632
+  y: 680
   width: 60
   height: 40
 
