@@ -4,7 +4,7 @@ require_relative 'version'
 data = Squib.csv file: 'data/cards.csv' do |h,v|
   if h == 'name'
     v.to_s.downcase.gsub(' ','_')
-  elsif h == 'type'
+  elsif h == 'type' || h == 'type_prefix'
     v.to_s.downcase
   else
     v
@@ -30,10 +30,14 @@ Squib::Deck.new(cards: data.nrows) do
   background color: :white
   svg file: 'card_master.svg'
 
+
+  full_types = data.type_prefix.zip(data.type).map { |s| s.join(' ').strip }
+
+  text str: full_types, layout: :type
   text str: data.name, layout: :name
-  text str: data.type, layout: :type
   text str: data.cpu, layout: :cpu
 
+  svg layout: :type_icon,  file: dot_svg(data.type)
   svg layout: :quick, file: dot_svg(data.quick_icon)
   svg layout: :bots,  file: dot_svg(data.bots_icon)
   svg layout: :dev,   file: dot_svg(data.dev_icon)

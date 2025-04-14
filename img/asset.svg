@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="75"
+   height="75"
+   viewBox="0 0 75 75"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="asset.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><path
+       d="m 7.256267,10.460615 -2.5697572,19.3801 H 10.48318 v -19.3801 z m 6.067645,0 v 19.3801 h 5.997099 v -19.3801 z m 8.837831,0 v 19.3801 h 8.942938 v -2.777604 h 14.624716 v 2.777604 h 8.942938 v -19.3801 z m 35.351323,0 v 19.3801 h 5.9971 v -19.3801 z m 8.837831,0 v 19.3801 h 5.79667 l -2.569915,-19.3801 z M 33.945412,29.903843 v 16.602496 h 8.943254 V 29.903843 Z m 4.471627,1.829746 a 2.9459963,2.5413499 0 0 1 2.945838,2.540877 2.9459963,2.5413499 0 0 1 -1.525472,2.223661 v 5.873054 H 36.996673 V 36.500652 A 2.9459963,2.5413499 0 0 1 35.4712,34.274466 2.9459963,2.5413499 0 0 1 38.417039,31.733589 Z M 4.4860804,32.681447 v 20.187341 l 3.0512612,2.87703 V 32.681447 Z m 5.8919926,0 V 57.616755 H 66.456004 V 32.681447 H 45.729397 V 49.347071 H 31.104681 V 32.681447 Z m 58.918663,0 v 23.064371 l 3.051261,-2.87703 V 32.681447 Z M 4.4860804,56.773374 v 6.398589 H 11.272588 L 4.4860804,56.773216 Z m 67.8619166,0 -6.786508,6.398589 h 6.786508 v -6.398747 z m -59.813177,3.684113 2.878607,2.714476 H 61.42065 l 2.878608,-2.714476 z"
+       fill="#ffffff"
+       fill-opacity="1"
+       id="path2"
+       style="fill:#1a1a1a;stroke-width:1" /></g></svg>
