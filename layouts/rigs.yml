@@ -1,0 +1,53 @@
+name:
+  x: 75
+  y: 70
+  width: 675
+  height: 100
+  font: Consolas Bold 22
+  valign: middle
+  align: center
+  ellipsize: autoscale
+  # hint: red
+
+type:
+  x: 90
+  y: 180
+  width: deck - 180
+  height: 50
+  font: Consolas 12
+  valign: middle
+  align: center
+  ellipsize: false
+  # hint: red
+
+desc:
+  x: 325
+  y: 225
+  width: 375
+  height: 600
+  font: Times New Roman,serif 10
+  # hint: red
+
+  valign: middle
+  align: center
+  ellipsize: false
+
+cpu:
+  x: 120
+  y: 240
+  font: Open Sans Bold 12
+
+jobs:
+  x: 300
+  y: 380
+  font: Open Sans Bold 12
+
+devs:
+  x: 240
+  y: 540
+  font: Open Sans Bold 12
+
+cost:
+  x: 100
+  y: 250
+  font: Open Sans Bold 12

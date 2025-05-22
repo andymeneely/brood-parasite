@@ -11,6 +11,22 @@ data = Squib.csv file: 'data/cards.csv' do |h,v|
   end
 end
 
+data.bots_text.each.with_index do |t, i|
+  if data.bots_icon[i] == 'bots_vuln'
+    data.bots_text[i] = "REQUIRES EXPLOIT. #{data.bots_text[i]}"
+  end
+
+  if data.bots_icon[i] == 'bots_action'
+    data.bots_text[i] = "REQUIRES ASSET OR EXPLOIT. #{data.bots_text[i]}"
+  end
+
+  if data.bots_icon[i] == 'bots_chain'
+    data.bots_text[i] = "REQUIRES ASSET & EXPLIOT. #{data.bots_text[i]}"
+  end
+end
+
+
+
 def range_any(arr)
   result = []
   0.upto(arr.size) do |i|
@@ -60,4 +76,4 @@ Squib::Deck.new(cards: data.nrows) do
 
 end
 
-
+puts "Done!"
