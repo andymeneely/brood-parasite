@@ -1,11 +1,11 @@
 name,cpu,qty,type_prefix,type,quick_icon,quick_text,bots_icon,ops,bots_text,dev_icon,dev_text
-Email Dump,1,1,Starter,Asset,quick,Gain $2,bots_standalone,8,,dev,TBD
-Port Scan,1,1,Starter,Exploit,quick,Infect a clean node,bots_standalone,3,Infect two clean nodes.,,
+Email Dump,1,1,Starter,Asset,quick,Gain $2,bots_standalone,4,Gain $5,,
+Port Scan,1,1,Starter,Exploit,quick,Infect a clean node,bots_standalone,3,Infect two clean nodes.,dev,"At the start of your turn, gain $1 for every clean node adjacent to one of your strongholds."
 Command,2,1,Starter,Exploit,quick,Infect,bots_action,-3,,dev,"When infecting multiple times, you may infect in sequence."
-Script,3,1,Starter,Exploit,quick,Infect one of your nodes with no miners.,bots_action,-3,,dev,"When you gain a card that has a job, you may start that job immediately."
+Script,2,1,Starter,Exploit,quick,Infect one of your nodes with no miners.,bots_action,-3,,dev,"When you gain a card that has a job, you may start that job immediately."
 Consulting,3,1,Starter,Exploit,quick,Remove all of YOUR discs from one of your nodes. Gain $3 per disc.,bots_standalone,6,Remove ALL discs from one of your nodes. Gain $4 per disc.,dev,"When one of your discs is removed, gain $1."
-Exfiltrate,1,1,Starter,Exploit,quick,"Expose an asset",bots_standalone,2,Expose an exploit,dev,"Job phase: if none of your jobs finished this turn, expose an asset or exploit."
-Refactor,2,1,Starter,Exploit,quick,Place your discard pile on your buffer.,bots_standalone,1,You may move two miners,dev,"At the start of your turn, you may discard this card to re-order your draw pile."
+Exfiltrate,3,1,Starter,Exploit,quick,"Expose an asset",bots_standalone,2,Expose an exploit,dev,"Job phase: if one of your jobs finished this turn, expose an asset or exploit."
+Refactor,2,1,Starter,Exploit,quick,Place your discard pile on your buffer.,bots_standalone,1,You may move up to two miners to any nodes that are solely yours.,dev,"At the start of your turn, you may discard this card to re-order your draw pile."
 Internet Satellites,3,1,Corporate,Asset,quick,Infect,bots_standalone,12,"Infect an uninfected Corporate node, ignoring adjacency",,
 Card Swipe Logs,3,1,Corporate,Asset,,,bots_standalone,6,"Infect a corporate node. If a bot phase ends with this still running, discard this job.",,
 Server Logs,1,1,Corporate,Asset,quick,Infect 1 time or Draw an exploit for free,bots_vuln,4,"Draw 2, gain 1 exploit for free",,
