@@ -25,8 +25,6 @@ data.bots_text.each.with_index do |t, i|
   end
 end
 
-
-
 def range_any(arr)
   result = []
   0.upto(arr.size) do |i|

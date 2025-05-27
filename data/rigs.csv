@@ -1,5 +1,6 @@
-name,type,qty,cpu,jobs,devs,desc
-noob camp,basic rig,4,3,1,1,"If you start the game with this rig, gain $10."
-tmuxer,advanced rig,1,4,2,2,"If you are overclocked, have two jobs running, and have two dev powers, you may reorder your deck and discard."
-hex,advanced rig,1,5,2,1,"If you are overclocked, any quick action that infects may infect one additional time."
-junk rat,advanced rig,1,2,4,1,"Once per turn, if you are overclocked, you may draw an additional card. If you do, you must discard a card."
+name,type,qty,cpu,jobs,devs,cost,desc
+noob camp,basic rig,4,5,1,1,0,"If you start the game with this rig, gain $10."
+tmux master,advanced rig,1,5,2,2,9,"If you are overclocked, have two jobs running, and have two dev powers, you may reorder your deck and discard."
+hex,advanced rig,1,7,2,1,12,"If you are overclocked, any quick action that infects may infect one additional time."
+junk rat,advanced rig,1,6,4,1,10,"Once per turn, if you are overclocked, you may draw an additional card. If you do, you must discard a card."
+bitmonger,advanced rig,1,6,3,1,11,"If you are overclocked, gaining an asset costs $2 less."
