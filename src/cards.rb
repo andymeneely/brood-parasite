@@ -39,6 +39,10 @@ def dot_svg(arr)
   end
 end
 
+data['job_target_exploit_svg'] = data.job_target_exploit.map do |v|
+  v == 'Y' ? 'job_target_exploit.svg' : nil
+end
+
 Squib::Deck.new(cards: data.nrows) do
   use_layout file: 'layouts/cards.yml'
   background color: :white
@@ -55,6 +59,7 @@ Squib::Deck.new(cards: data.nrows) do
   svg layout: :quick, file: dot_svg(data.quick_icon)
   svg layout: :bots,  file: dot_svg(data.bots_icon)
   svg layout: :dev,   file: dot_svg(data.dev_icon)
+  svg layout: :job_target1,  file: data.job_target_exploit_svg
 
   text layout: :quick_text, str: data.quick_text
   text layout: :bots_text,  str: data.bots_text

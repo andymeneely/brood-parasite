@@ -161,7 +161,7 @@ bots:
 
 dev:
   x: 75
-  y: 825
+  y: 750
 
 type_icon:
   width: 75
@@ -191,20 +191,29 @@ bots_text:
   height: 220
   # hint: red
 
+job_target1:
+  extends:
+    - bots
+  x: 475
+  y: 665
+
 dev_text:
   extends:
     - dev
     - desc_text
-  x: 100
-  width: 625
-  height: 200
+  x: 115
+  width: 615
+  height: 225
+  # hint: red
+
 
 ops_text:
   font: Consolas 10
   color: white
+  align: center
   # hint: red
-  x: 632
-  y: 680
+  x: 583
+  y: 678
   width: 60
   height: 40
 

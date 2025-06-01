@@ -1,83 +1,83 @@
-name,cpu,qty,type_prefix,type,quick_icon,quick_text,bots_icon,ops,bots_text,dev_icon,dev_text
-Email Dump,1,1,Starter,Asset,quick,Gain $2,bots_standalone,4,Gain $5,,
-Port Scan,1,1,Starter,Exploit,quick,Infect a clean node,bots_standalone,3,Infect two clean nodes.,dev,"At the start of your turn, gain $1 for every clean node adjacent to one of your strongholds."
-Command,2,1,Starter,Exploit,quick,Infect,bots_action,-3,,dev,"When infecting multiple times, you may infect in sequence."
-Script,2,1,Starter,Exploit,quick,Infect one of your nodes with no miners.,bots_action,-3,,dev,"When you gain a card that has a job, you may start that job immediately."
-Consulting,3,1,Starter,Exploit,quick,Remove all of YOUR discs from one of your nodes. Gain $3 per disc.,bots_standalone,6,Remove ALL discs from one of your nodes. Gain $4 per disc.,dev,"When one of your discs is removed, gain $1."
-Exfiltrate,3,1,Starter,Exploit,quick,"Expose an asset",bots_standalone,2,Expose an exploit,dev,"Job phase: if one of your jobs finished this turn, expose an asset or exploit."
-Refactor,2,1,Starter,Exploit,quick,Place your discard pile on your buffer.,bots_standalone,1,You may move up to two miners to any nodes that are solely yours.,dev,"At the start of your turn, you may discard this card to re-order your draw pile."
-Internet Satellites,3,1,Corporate,Asset,quick,Infect,bots_standalone,12,"Infect an uninfected Corporate node, ignoring adjacency",,
-Card Swipe Logs,3,1,Corporate,Asset,,,bots_standalone,6,"Infect a corporate node. If a bot phase ends with this still running, discard this job.",,
-Server Logs,1,1,Corporate,Asset,quick,Infect 1 time or Draw an exploit for free,bots_vuln,4,"Draw 2, gain 1 exploit for free",,
-Trading Ledger,2,1,Corporate,Asset,quick,Gain $5 and trash this card.,bots_chain,1,"If the target corporate asset gains money, double it.",,
-Social Security Nums,1,1,Corporate,Asset,quick,Gain $3. You may trash this card and gain an additional $3.,bots_standalone,5,"Draw a corporate asset. If it's a Mark, place it in your discard. Otherwise, place it back on the top of the deck.",,
-Credit Card Numbers,3,1,Corporate,Asset,quick,Gain $3. You may trash this card and gain an additional $3.,bots_vuln,5,Gain $1 for every miner you have,,
-Financial Records,1,2,Corporate,Asset,quick,Gain $4. Trash this card.,bots_vuln,8,"Immediately place $5 on this card. During bots phase, if this is completed, gain the money. If not, remove $1",,
-Trade Secrets,1,1,Corporate ,Asset,quick,Gain $3. Trash this card.,bots_standalone,10,"Immediately place $6 on this card. During bots phase, if this is completed, gain the money. If not, remove $2",dev,"You may discard any number of cards, and gain $1 per card"
-CEO,1,1,Corporate Mark,Asset,,,bots_chain,5,Expose a corporate asset.,,
-CFO,2,1,Corporate Mark,Asset,,,bots_chain,4,Gain $5.,,
-Middle Manager,,2,Corporate Mark,Asset,,,bots_standalone,3,"Infect a corporate node",,
-Credential Dump,1,1,Encrypted Corporate,Asset,quick,Infect once,bots_standalone,3,"Infect twice. If you are overclocked, you may restart this job.",,
-Database Backups,1,1,Encrypted Corporate,Asset,quick,Gain $2k,bots_standalone,2,"You may infect up to three times, for $1 each",,
-Cryptocoin Wallet,2,1,Encrypted Corporate,Asset,,,bots_vuln,15,Gain $10,,
-Nuclear Launch Codes,4,1,Encrypted Government,Asset,,,bots_vuln,15,TBD,,
-Brute Force,1,4,Encryption,Exploit,,,bots_action,8,Encryption/encrypted only,,
-Birthday Attack,1,1,Encryption,Exploit,,,bots_chain,-5,Encryption/encrypted only,,
-Rainbow Table,1,1,Encryption,Exploit,,,bots_chain,-4,"Encryption/encrypted only",dev,You may gain an encrypted asset for free
-Session Seeds,1,1,Government,Asset,,,bots_action,6,Place in your dev slot.,dev,"Only bots may place this. You may gain an exposed mark. If you do, discard this card."
-Kompromat,2,1,Government,Asset,,,bots_standalone,4,Place in your dev slot.,dev,Can only be placed from bots. Gain $2 for each of your government strongholds at the start of your turn.
-War Plans,2,1,Government,Asset,quick,Infect a clean node in any government subnet,bots_vuln,6,Infect any node in a government subnet.,,
-CCTV Footage,1,1,Government,Asset,,,bots_standalone,7,Infect one of your existing nodes (in any subnet) up to two times.,,
-Tax Audits,1,1,Government,Asset,,,bots_standalone,3,Gain $2,,
-Voter Registration,1,1,Government,Asset,quick,Infect,bots_vuln,5,Infect two different nodes.,,
-Facial Recognition DB,1,1,Government,Asset,quick,Infect a clean node,bots_vuln,6,Infect two clean nodes.,dev,"When you crack a military asset with bots, gain $2"
-Power Grid Access,2,1,Government,Asset,quick,Infect a node or remove all rival discs from one of your nodes.,bots_vuln,10,"Infect, then remove all rival discs from one of your nodes.",,
-Drone Fleet Access,4,1,Government,Asset,quick,TBD,bots_vuln,8,TBD,,
-Script Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",bots_chain,2,"For every injection exploit in this job, infect.",,
-Query Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",bots_chain,3,"For every injection exploit in this job, infect.",,
-CRUD Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",bots_chain,4,"For every injection exploit in this job, infect.",,
-Process Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",bots_chain,1,"For every injection exploit in this job, infect.",,
-Fingerprint Database,1,1,Medical,Asset,quick,"Infect an adjacent, non-medical node",bots_vuln,10,Infect 3 times,,
-DNA Database,1,1,Medical,Asset,quick,Gain $2,bots_vuln,8,Gain $2. You may place this on top of your deck.,dev,+$1 to any money gained from a medical card
-Life Support Systems,4,1,Medical,Asset,,,bots_vuln,10,Gain $1 for each of your medical nodes,,
-Prescriptions,1,2,Medical,Asset,quick,Gain $5.,bots_vuln,5,Gain $10,,
-Patient History,1,1,Medical Mark,Asset,quick,Gain $3,bots_vuln,4,Gain $5,,
-Dox Rival,3,1,Rival,Exploit,quick,Infect one an adjacent rival node,bots_action,8,"Rival gains 2 Bottleneck",dev,"At the start of your turn, you may discard this to gain a Rival card."
-Denial of Service,1,1,Rival,Exploit,quick,Add 2 ops to a rival's job,bots_action,1,"Add 1 op to a Rival's job. You may add an 1 op to this job to keep it.",dev,TBD
-Rival Denial,1,1,Rival,Exploit,,,bots_action,3,Rival gains CPU spike. This Job only ends when that rival has no CPU spikes.,,
-Man in the Middle,1,1,Rival,Exploit,quick,Use a rival's quick action from one of their current jobs.,bots_action,3,Expose an asset,dev,"When a rival infects one of your nodes, gain $1"
-Kill Signal,2,1,Rival,Exploit,quick,Kill the job of a rival with fewer bots than you.,bots_action,5,Kill the job of target rival,dev,You may kill any of your jobs at any time.
-Bot Herder Rival,0,2,Rival,Asset,,,bots_vuln,3,Applies to a Rival that has the most Bots.,,
-Roommate Rival,1,2,Rival,Asset,,,bots_vuln,1,Applies to a Rival you share a node with.,,
-Adjacent Rival,0,2,Rival,Asset,,,bots_vuln,4,Applies to a Rival you share a network with.,,
-Fork Bomb,1,1,Rival,Exploit,quick,Reduce one of your nodes to a single infection disc,bots_action,3,"Rival must uninstall all discs from one of your nodes.",,
-Session Hijacking,2,1,Rival,Exploit,quick,Infect a rival node adjacent to your own.,bots_action,1,"Immediately: add up to 3 counters, and 5 Ops per counter.
+name,cpu,qty,type_prefix,type,quick_icon,quick_text,job_target_asset,job_target_exploit,bots_icon,ops,bots_text,dev_icon,dev_text
+Email Dump,1,2,Starter,Asset,quick,Gain $2,,,bots_standalone,4,Gain $5,,
+Port Scan,1,2,Starter,Exploit,quick,Infect a clean node,,,bots_standalone,3,Infect two clean nodes.,dev,"At the start of your turn, gain $1 for every clean node adjacent to one of your strongholds."
+Command,2,2,Starter,Exploit,quick,Infect,,,bots_standalone,1,Reduce all jobs by 3 ops,dev,"When infecting multiple times, you may infect in sequence."
+Script,2,2,Starter,Exploit,quick,Infect one of your nodes with no miners.,Y,Y,bots_standalone,-3,May be combined with asset or exploit.,dev,"When you gain a card that has a job, you may start that job immediately."
+Consulting,3,2,Starter,Exploit,quick,Remove all of YOUR discs from one of your nodes. Gain $3 per disc.,,,bots_standalone,6,Remove ALL discs from one of your nodes. Gain $4 per disc.,dev,"When one of your discs is removed, gain $1."
+Exfiltrate,3,2,Starter,Exploit,quick,"Expose an asset",,,bots_standalone,2,Expose an exploit,dev,"Job phase: if one of your jobs finished this turn, expose an asset or exploit."
+Refactor,2,2,Starter,Exploit,quick,Place your discard pile on your buffer.,,,bots_standalone,1,You may move up to two miners to any nodes that are solely yours.,dev,"At the start of your turn, you may discard this card to re-order your draw pile."
+Internet Satellites,3,1,Corporate,Asset,quick,Infect,,,bots_standalone,12,"Infect an uninfected Corporate node, ignoring adjacency",,
+Card Swipe Logs,3,1,Corporate,Asset,,,,,bots_standalone,6,"Infect a corporate node. If a bot phase ends with this still running, discard this job.",,
+Server Logs,1,1,Corporate,Asset,quick,Infect 1 time or Draw an exploit for free,,,bots_vuln,4,"Draw 2, gain 1 exploit for free",,
+Trading Ledger,2,1,Corporate,Asset,quick,Gain $5 and trash this card.,,,bots_chain,1,"If the target corporate asset gains money, double it.",,
+Social Security Nums,1,1,Corporate,Asset,quick,Gain $3. You may trash this card and gain an additional $3.,,,bots_standalone,5,"Draw a corporate asset. If it's a Mark, place it in your discard. Otherwise, place it back on the top of the deck.",,
+Credit Card Numbers,3,1,Corporate,Asset,quick,Gain $3. You may trash this card and gain an additional $3.,,,bots_vuln,5,Gain $1 for every miner you have,,
+Financial Records,1,2,Corporate,Asset,quick,Gain $4. Trash this card.,,,bots_vuln,8,"Immediately place $5 on this card. During bots phase, if this is completed, gain the money. If not, remove $1",,
+Trade Secrets,1,1,Corporate ,Asset,quick,Gain $3. Trash this card.,,,bots_standalone,10,"Immediately place $6 on this card. During bots phase, if this is completed, gain the money. If not, remove $2",dev,"You may discard any number of cards, and gain $1 per card"
+CEO,1,1,Corporate Mark,Asset,,,,,bots_chain,5,Expose a corporate asset.,,
+CFO,2,1,Corporate Mark,Asset,,,,,bots_chain,4,Gain $5.,,
+Middle Manager,,2,Corporate Mark,Asset,,,,,bots_standalone,3,"Infect a corporate node",,
+Credential Dump,1,1,Encrypted Corporate,Asset,quick,Infect once,,,bots_standalone,3,"Infect twice. If you are overclocked, you may restart this job.",,
+Database Backups,1,1,Encrypted Corporate,Asset,quick,Gain $2k,,,bots_standalone,2,"You may infect up to three times, for $1 each",,
+Cryptocoin Wallet,2,1,Encrypted Corporate,Asset,,,,,bots_vuln,15,Gain $10,,
+Nuclear Launch Codes,4,1,Encrypted Government,Asset,,,,,bots_vuln,15,TBD,,
+Brute Force,1,4,Encryption,Exploit,,,,,bots_action,8,Encryption/encrypted only,,
+Birthday Attack,1,1,Encryption,Exploit,,,,,bots_chain,-5,Encryption/encrypted only,,
+Rainbow Table,1,1,Encryption,Exploit,,,,,bots_chain,-4,"Encryption/encrypted only",dev,You may gain an encrypted asset for free
+Session Seeds,1,1,Government,Asset,,,,,bots_action,6,Place in your dev slot.,dev,"Only bots may place this. You may gain an exposed mark. If you do, discard this card."
+Kompromat,2,1,Government,Asset,,,,,bots_standalone,4,Place in your dev slot.,dev,Can only be placed from bots. Gain $2 for each of your government strongholds at the start of your turn.
+War Plans,2,1,Government,Asset,quick,Infect a clean node in any government subnet,,,bots_vuln,6,Infect any node in a government subnet.,,
+CCTV Footage,1,1,Government,Asset,,,,,bots_standalone,7,Infect one of your existing nodes (in any subnet) up to two times.,,
+Tax Audits,1,1,Government,Asset,,,,,bots_standalone,3,Gain $2,,
+Voter Registration,1,1,Government,Asset,quick,Infect,,,bots_vuln,5,Infect two different nodes.,,
+Facial Recognition DB,1,1,Government,Asset,quick,Infect a clean node,,,bots_vuln,6,Infect two clean nodes.,dev,"When you crack a military asset with bots, gain $2"
+Power Grid Access,2,1,Government,Asset,quick,Infect a node or remove all rival discs from one of your nodes.,,,bots_vuln,10,"Infect, then remove all rival discs from one of your nodes.",,
+Drone Fleet Access,4,1,Government,Asset,quick,TBD,,,bots_vuln,8,TBD,,
+Script Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",,,bots_chain,2,"For every injection exploit in this job, infect.",,
+Query Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",,,bots_chain,3,"For every injection exploit in this job, infect.",,
+CRUD Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",,,bots_chain,4,"For every injection exploit in this job, infect.",,
+Process Injection,2,2,Injection,Exploit,quick,"For every injection exploit you have played this turn, infect.",,,bots_chain,1,"For every injection exploit in this job, infect.",,
+Fingerprint Database,1,1,Medical,Asset,quick,"Infect an adjacent, non-medical node",,,bots_vuln,10,Infect 3 times,,
+DNA Database,1,1,Medical,Asset,quick,Gain $2,,,bots_vuln,8,Gain $2. You may place this on top of your deck.,dev,+$1 to any money gained from a medical card
+Life Support Systems,4,1,Medical,Asset,,,,,bots_vuln,10,Gain $1 for each of your medical nodes,,
+Prescriptions,1,2,Medical,Asset,quick,Gain $5.,,,bots_vuln,5,Gain $10,,
+Patient History,1,1,Medical Mark,Asset,quick,Gain $3,,,bots_vuln,4,Gain $5,,
+Dox Rival,3,1,Rival,Exploit,quick,Infect one an adjacent rival node,,,bots_action,8,"Rival gains 2 Bottleneck",dev,"At the start of your turn, you may discard this to gain a Rival card."
+Denial of Service,1,1,Rival,Exploit,quick,Add 2 ops to a rival's job,,,bots_action,1,"Add 1 op to a Rival's job. You may add an 1 op to this job to keep it.",dev,TBD
+Rival Denial,1,2,Rival,Exploit,,,,,bots_action,3,Rival gains CPU spike. This Job only ends when that rival has no CPU spikes.,,
+Man in the Middle,1,1,Rival,Exploit,quick,Use a rival's quick action from one of their current jobs.,,,bots_action,3,Expose an asset,dev,"When a rival infects one of your nodes, gain $1"
+Kill Signal,2,1,Rival,Exploit,quick,Kill the job of a rival with fewer bots than you.,,,bots_action,5,Kill the job of target rival,dev,You may kill any of your jobs at any time.
+Bot Herder Rival,0,2,Rival,Asset,,,,,bots_vuln,3,Applies to a Rival that has the most Bots.,,
+Roommate Rival,1,2,Rival,Asset,,,,,bots_vuln,1,Applies to a Rival you share a node with.,,
+Adjacent Rival,0,2,Rival,Asset,,,,,bots_vuln,4,Applies to a Rival you share a network with.,,
+Fork Bomb,1,1,Rival,Exploit,quick,Reduce one of your nodes to a single infection disc,,,bots_action,3,"Rival must uninstall all discs from one of your nodes.",,
+Session Hijacking,2,1,Rival,Exploit,quick,Infect a rival node adjacent to your own.,,,bots_action,1,"Immediately: add up to 3 counters, and 5 Ops per counter.
 Finish: for each counter, infect a rival node adjacent to your own.",,
-Trojan Horse,2,1,Rival,Exploit,,,bots_action,3,"Add a Waste Cycles to the top of the target rival's deck.",,
-Wasted Cycles,1,1,Waste,Asset,quick,Trash this card,,,,,
-Lateral Movement,4,1,,Exploit,quick,Infect a node adjacent to one of your strongholds,bots_action,1,"Infect a infected node, then infect a different infected node.",,
-Reboot,5,4,,Exploit,quick,"You may remove all waste cards from your deck, buffer, and discard.",bots_standalone,1,Remove a rival token from one of your nodes.,dev,"At the start of your turn, you may discard this card to re-order your draw pile."
-Spread Infection,1,1,,Exploit,quick,Infect a clean node,bots_chain,9,"If this job caused an infection, infect a clean node.",,
-Backdoor,3,1,,Exploit,quick,Expose an asset from one of your sectors.,bots_standalone,5,Expose two assets from each of your sectors,,
-Multi-factor Auth,3,4,,Defense,,,bots_chain,15,Critical Assets only. Defeat when completed.,,
-Hard Reset,5,1,,Exploit,quick,Move your entire discard pile to your buffer.,bots_action,2,Cancel any of your jobs,dev,TBD
-Reset Accounts,5,2,,Exploit,quick,TBD,,,,dev,"When a rival action impacts attacks you, you may discard this card instead to prevent its effect."
-Phishing Expedition,1,1,,Exploit,quick,Move a mark to its cheapest market slot,bots_standalone,2,"Expose an asset",dev,Gain $5 at the start the next turn
-Command & Control,3,1,,Exploit,,,bots_vuln,15,"Infect a node in your network that you are not connected to. Trash this card.",,
-Input Validator,3,4,,Defense,,,,,,dev,"If you are not overclocked, defeat this defense. Otherwise, this cannot be removed from your dev slot."
-Firewall,4,4,,Defense,,,bots_vuln,30,Defeat this defense.,,
-Intrusion Detection,4,4,,Defense,quick,,bots_vuln,20,"If you have no other jobs when this job finishes, defeat this defense. Otherwise, add 1 op.",dev,TBD
-Root Kit,3,1,,Exploit,quick,Add an infection disc to the bottom of one of your nodes.,bots_standalone,6,"Add an infection disc to the bottom of 3 of your nodes.",dev,"If one of your nodes is cleansed, infect that node."
-Worm,2,1,,Exploit,,,bots_chain,2,Defense asset only,dev,At the start of your turn you may place this anywhere in your deck or discard
-Virus,1,1,,Exploit,,,bots_standalone,5,"Infect a new node. If the network of that node has uninfected nodes, keep this job and add 2 ops to it.",dev,"If you started your turn with this in your dev slot, you may use this in a job. If you do, remove 4 ops."
-Spear Phishing,3,1,,Exploit,quick,"Draw an asset card from a sector you have access to. If it is a Mark, expose it",bots_vuln,8,Gain an exposed mark on the market for free,,
-Compression Bomb,1,1,,Exploit,quick,Remove a rival disc from one your nodes,bots_action,5,Remove up to 3 of the target rival discs from your nodes,,
-Stack Smashing,1,1,,Exploit,quick,Infect,bots_action,1,"If the job involved infecting, you may place this in your dev slot.",dev,You may remove this from your dev slot without swapping.
-Ransomware,1,1,,Exploit,quick,Gain $2,bots_chain,1,"Gain $1 for the total op cost of this job.",,
-Cache Poisoning,2,1,,Exploit,quick,Infect one of your nodes with a rival miner,bots_action,6,Choose an adjacent node with the target rival's. Remove their discs and replace them with yours.,dev,"Immediately after an opponent infects one of your nodes, you may infect that node a third time. If you do, discard this card."
-Shell Script,3,1,,Exploit,quick,Reduce all jobs by 2 ops,bots_standalone,1,Reduce all jobs by 5 ops,dev,TBD
-Remote Code Execution,2,1,,Exploit,quick,"For every injection exploit you have played this turn, infect.",bots_chain,3,"If this job has an injection exploit, infect.",,
-Ransomware,1,1,,Exploit,quick,Gain $2. Gain an additional $2 if you are in a medical subnet.,bots_action,5,"Double all money gained from target asset.",,
-Regex Bomb,1,1,,Exploit,quick,Remove a rival disc from one of your nodes,bots_action,1,Remove all rival discs from one of your nodes,dev,"If you have a Defense in your hand, you may swap it with the top card on your deck."
-Daemon,2,1,,Exploit,,,bots_chain,1,"You may restart this job.",dev,"If one of your infection tokens is removed, you may add that token to one of your existing infections."
-Blackmail,2,1,,Exploit,quick,Gain $1 for any Mark asset exposed in your sectors.,bots_action,1,Mark assets only.,dev,You may place a Mark on this card. Any action targeting another mark may also be applied to this mark.
+Trojan Horse,2,1,Rival,Exploit,,,,,bots_action,3,"Add a Waste Cycles to the top of the target rival's deck.",,
+Wasted Cycles,1,1,Waste,Asset,quick,Trash this card,,,,,,,
+Lateral Movement,4,1,,Exploit,quick,Infect a node adjacent to one of your strongholds,,,bots_action,1,"Infect a infected node, then infect a different infected node.",,
+Reboot,5,4,,Exploit,quick,"You may remove all waste cards from your deck, buffer, and discard.",,,bots_standalone,1,Remove a rival token from one of your nodes.,dev,"At the start of your turn, you may discard this card to re-order your draw pile."
+Spread Infection,1,1,,Exploit,quick,Infect a clean node,,,bots_chain,9,"If this job caused an infection, infect a clean node.",,
+Backdoor,3,1,,Exploit,quick,Expose an asset from one of your sectors.,,,bots_standalone,5,Expose two assets from each of your sectors,,
+Multi-factor Auth,3,4,,Defense,,,,,bots_chain,15,Critical Assets only. Defeat when completed.,,
+Hard Reset,5,1,,Exploit,quick,Move your entire discard pile to your buffer.,,,bots_action,2,Cancel any of your jobs,dev,TBD
+Reset Accounts,5,2,,Exploit,quick,TBD,,,,,,dev,"When a rival action impacts attacks you, you may discard this card instead to prevent its effect."
+Phishing Expedition,1,1,,Exploit,quick,Move a mark to its cheapest market slot,,,bots_standalone,2,"Expose an asset",dev,Gain $5 at the start the next turn
+Command & Control,3,1,,Exploit,,,,,bots_vuln,15,"Infect a node in your network that you are not connected to. Trash this card.",,
+Input Validator,3,4,,Defense,,,,,,,,dev,"If you are not overclocked, defeat this defense. Otherwise, this cannot be removed from your dev slot."
+Firewall,4,4,,Defense,,,,,bots_vuln,30,Defeat this defense.,,
+Intrusion Detection,4,4,,Defense,quick,,,,bots_vuln,20,"If you have no other jobs when this job finishes, defeat this defense. Otherwise, add 1 op.",dev,TBD
+Root Kit,3,1,,Exploit,quick,Add an infection disc to the bottom of one of your nodes.,,,bots_standalone,6,"Add an infection disc to the bottom of 3 of your nodes.",dev,"If one of your nodes is cleansed, infect that node."
+Worm,2,1,,Exploit,,,,,bots_chain,2,Defense asset only,dev,At the start of your turn you may place this anywhere in your deck or discard
+Virus,1,1,,Exploit,,,,,bots_standalone,5,"Infect a new node. If the network of that node has uninfected nodes, keep this job and add 2 ops to it.",dev,"If you started your turn with this in your dev slot, you may use this in a job. If you do, remove 4 ops."
+Spear Phishing,3,1,,Exploit,quick,"Draw an asset card from a sector you have access to. If it is a Mark, expose it",,,bots_vuln,8,Gain an exposed mark on the market for free,,
+Compression Bomb,1,1,,Exploit,quick,Remove a rival disc from one your nodes,,,bots_action,5,Remove up to 3 of the target rival discs from your nodes,,
+Stack Smashing,1,1,,Exploit,quick,Infect,,,bots_action,1,"If the job involved infecting, you may place this in your dev slot.",dev,You may remove this from your dev slot without swapping.
+Ransomware,1,1,,Exploit,quick,Gain $2,,,bots_chain,1,"Gain $1 for the total op cost of this job.",,
+Cache Poisoning,2,1,,Exploit,quick,Infect one of your nodes with a rival miner,,,bots_action,6,Choose an adjacent node with the target rival's. Remove their discs and replace them with yours.,dev,"Immediately after an opponent infects one of your nodes, you may infect that node a third time. If you do, discard this card."
+Shell Script,3,1,,Exploit,quick,Reduce all jobs by 2 ops,,,bots_standalone,1,Reduce all jobs by 5 ops,dev,TBD
+Remote Code Execution,2,1,,Exploit,quick,"For every injection exploit you have played this turn, infect.",,,bots_chain,3,"If this job has an injection exploit, infect.",,
+Ransomware,1,1,,Exploit,quick,Gain $2. Gain an additional $2 if you are in a medical subnet.,,,bots_action,5,"Double all money gained from target asset.",,
+Regex Bomb,1,1,,Exploit,quick,Remove a rival disc from one of your nodes,,,bots_action,1,Remove all rival discs from one of your nodes,dev,"If you have a Defense in your hand, you may swap it with the top card on your deck."
+Daemon,2,1,,Exploit,,,,,bots_chain,1,"You may restart this job.",dev,"If one of your infection tokens is removed, you may add that token to one of your existing infections."
+Blackmail,2,1,,Exploit,quick,Gain $1 for any Mark asset exposed in your sectors.,,,bots_action,1,Mark assets only.,dev,You may place a Mark on this card. Any action targeting another mark may also be applied to this mark.

@@ -1,2 +1,3 @@
 --pattern **/*.{rb,typ,html,md,yml,yaml,csv,png,svg}
 --ignore '_output/*'
+--signal KILL
