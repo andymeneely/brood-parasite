@@ -74,3 +74,33 @@ Ransomware,1,1,,Exploit,quick,Gain $2. Gain an additional $2 if you are in a med
 Regex Bomb,1,1,,Exploit,quick,Remove a rival disc from one of your nodes,,,bots_action,1,Remove all rival discs from one of your nodes,dev,"If you have a Defense in your hand, you may swap it with the top card on your deck."
 Daemon,2,1,,Exploit,,,,,bots_chain,1,"You may restart this job.",dev,"If one of your infection tokens is removed, you may add that token to one of your existing infections."
 Blackmail,2,1,,Exploit,quick,Gain $1 for any Mark asset exposed in your sectors.,,,bots_action,1,Mark assets only.,dev,You may place a Mark on this card. Any action targeting another mark may also be applied to this mark.
+,,,,,,,,,,,,,
+Patient History,1,1,,Asset,quick,Gain $3,,,bots_vuln,4,Gain $5,,
+Dox Rival,3,1,Rival,Exploit,quick,Infect one an adjacent rival node,,,bots_action,8,Rival gains 2 Bottleneck,dev,"At the start of your turn, you may discard this to gain a Rival card."
+Denial of Service,1,1,Rival,Exploit,quick,Add 2 ops to a rival's job,,,bots_action,1,Add 1 op to a Rival's job. You may add an 1 op to this job to keep it.,dev,TBD
+Rival Denial,1,2,Rival,Exploit,,,,,bots_action,3,Rival gains CPU spike. This Job only ends when that rival has no CPU spikes.,,
+Man in the Middle,1,1,Rival,Exploit,quick,Use a rival's quick action from one of their current jobs.,,,bots_action,3,Expose an asset,dev,"When a rival infects one of your nodes, gain $1"
+Kill Signal,2,1,Rival,Exploit,quick,Kill the job of a rival with fewer bots than you.,,,bots_action,5,Kill the job of target rival,dev,You may kill any of your jobs at any time.
+Session Hijacking,2,1,Rival,Exploit,quick,Infect a rival node adjacent to your own.,,,bots_action,1,"Immediately: add up to 3 counters, and 5 Ops per counter.
+Finish: for each counter, infect a rival node adjacent to your own.",,
+Trojan Horse,2,1,Rival,Exploit,,,,,bots_action,3,Add a Waste Cycles to the top of the target rival's deck.,,
+Backdoor,3,1,,Exploit,quick,Expose an asset from one of your sectors.,,,bots_standalone,5,Expose two assets from each of your sectors,,
+Multi-factor Auth,3,4,,Defense,,,,,bots_chain,15,Critical Assets only. Defeat when completed.,,
+Hard Reset,5,1,,Exploit,quick,Move your entire discard pile to your buffer.,,,bots_action,2,Cancel any of your jobs,dev,TBD
+Reset Accounts,5,2,,Exploit,quick,TBD,,,,,,dev,"When a rival action impacts attacks you, you may discard this card instead to prevent its effect."
+Phishing Expedition,1,1,,Exploit,quick,Move a mark to its cheapest market slot,,,bots_standalone,2,Expose an asset,dev,Gain $5 at the start the next turn
+Command & Control,3,1,,Exploit,,,,,bots_vuln,15,Infect a node in your network that you are not connected to. Trash this card.,,
+Input Validator,3,4,,Defense,,,,,,,,dev,"If you are not overclocked, defeat this defense. Otherwise, this cannot be removed from your dev slot."
+Firewall,4,4,,Defense,,,,,bots_vuln,30,Defeat this defense.,,
+Intrusion Detection,4,4,,Defense,quick,,,,bots_vuln,20,"If you have no other jobs when this job finishes, defeat this defense. Otherwise, add 1 op.",dev,TBD
+Virus,1,1,,Exploit,,,,,bots_standalone,5,"Infect a new node. If the network of that node has uninfected nodes, keep this job and add 2 ops to it.",dev,"If you started your turn with this in your dev slot, you may use this in a job. If you do, remove 4 ops."
+Spear Phishing,3,1,,Exploit,quick,"Draw an asset card from a sector you have access to. If it is a Mark, expose it",,,bots_vuln,8,Gain an exposed mark on the market for free,,
+Compression Bomb,1,1,,Exploit,quick,Remove a rival disc from one your nodes,,,bots_action,5,Remove up to 3 of the target rival discs from your nodes,,
+Stack Smashing,1,1,,Exploit,quick,Infect,,,bots_action,1,"If the job involved infecting, you may place this in your dev slot.",dev,You may remove this from your dev slot without swapping.
+Ransomware,1,1,,Exploit,quick,Gain $2,,,bots_chain,1,Gain $1 for the total op cost of this job.,,
+Cache Poisoning,2,1,,Exploit,quick,Infect one of your nodes with a rival miner,,,bots_action,6,Choose an adjacent node with the target rival's. Remove their discs and replace them with yours.,dev,"Immediately after an opponent infects one of your nodes, you may infect that node a third time. If you do, discard this card."
+Remote Code Execution,2,1,,Exploit,quick,"For every injection exploit you have played this turn, infect.",,,bots_chain,3,"If this job has an injection exploit, infect.",,
+Ransomware,1,1,,Exploit,quick,Gain $2. Gain an additional $2 if you are in a medical subnet.,,,bots_action,5,Double all money gained from target asset.,,
+Regex Bomb,1,1,,Exploit,quick,Remove a rival disc from one of your nodes,,,bots_action,1,Remove all rival discs from one of your nodes,dev,"If you have a Defense in your hand, you may swap it with the top card on your deck."
+Blackmail,2,1,,Exploit,quick,Gain $1 for any Mark asset exposed in your sectors.,,,bots_action,1,Mark assets only.,dev,You may place a Mark on this card. Any action targeting another mark may also be applied to this mark.
+Process,,,,,,,,,,,,,
